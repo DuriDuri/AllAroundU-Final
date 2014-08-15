@@ -13,6 +13,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    //Parse Integration
+    [Parse setApplicationId:@"NHM8BqHoR5R5mi4SuzU0GnVacAWtrN8sWalAPcsE"
+                  clientKey:@"vpmvuy4VhPeTJlM6Dzhrr4P7Y0Gr3RJxLNHhBjJr"];
+    
+    //Initialize Parse Analytics
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    //Initialize FaceBookSDK
+    
+    
     return YES;
 }
 							
@@ -36,7 +47,18 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
 }
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    return [FBAppCall handleOpenURL:url
+                  sourceApplication:sourceApplication
+                        withSession:[PFFacebookUtils session]];
+}
+
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {

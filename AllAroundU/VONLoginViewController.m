@@ -9,6 +9,9 @@
 #import "VONLoginViewController.h"
 
 @interface VONLoginViewController ()
+@property (strong, nonatomic) IBOutlet UIImageView *loginImageView;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *loginActivityIndicator;
+- (IBAction)loginButtonPressed:(UIButton *)sender;
 
 @end
 
@@ -27,6 +30,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.loginActivityIndicator.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,4 +50,6 @@
 }
 */
 
+- (IBAction)loginButtonPressed:(UIButton *)sender {
+}
 @end
