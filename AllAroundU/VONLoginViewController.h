@@ -1,5 +1,5 @@
 //
-//  VONViewController.h
+//  VONLoginViewController.h
 //  AllAroundU
 //
 //  Created by Duri Abdurahman Duri on 8/14/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VONViewController : UIViewController
+@interface VONLoginViewController : UIViewController
 
 @end
