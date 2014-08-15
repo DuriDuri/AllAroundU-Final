@@ -22,8 +22,8 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     //Initialize FaceBookSDK
-    
-    
+    [PFFacebookUtils initializeFacebook];
+    [FBLoginView class];
     return YES;
 }
 							

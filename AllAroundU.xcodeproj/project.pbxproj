@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		681D8737199DF71F00C3D83C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681D8736199DF71F00C3D83C /* Default@2x.png */; };
+		681D873A199DF78700C3D83C /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 681D8738199DF78700C3D83C /* Facebook.png */; };
+		681D873B199DF78700C3D83C /* Facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681D8739199DF78700C3D83C /* Facebook@2x.png */; };
 		68853F91199D480B00512543 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68853F90199D480B00512543 /* Foundation.framework */; };
 		68853F93199D480B00512543 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68853F92199D480B00512543 /* CoreGraphics.framework */; };
 		68853F95199D480B00512543 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68853F94199D480B00512543 /* UIKit.framework */; };
@@ -77,6 +80,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		681D8736199DF71F00C3D83C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images.xcassets/LaunchImage.launchimage/Default@2x.png"; sourceTree = "<group>"; };
+		681D8738199DF78700C3D83C /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
+		681D8739199DF78700C3D83C /* Facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook@2x.png"; sourceTree = "<group>"; };
 		68853F8D199D480B00512543 /* AllAroundU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllAroundU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68853F90199D480B00512543 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		68853F92199D480B00512543 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -360,6 +366,9 @@
 		68854036199D548E00512543 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				681D8738199DF78700C3D83C /* Facebook.png */,
+				681D8739199DF78700C3D83C /* Facebook@2x.png */,
+				681D8736199DF71F00C3D83C /* Default@2x.png */,
 				68853FF7199D4A2D00512543 /* Icon-Small.png */,
 				68853FF8199D4A2D00512543 /* Icon-Small@2x.png */,
 				68853FF9199D4A2D00512543 /* Icon-60@2x.png */,
@@ -465,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6885400B199D4A2D00512543 /* dry-32.png in Resources */,
+				681D873A199DF78700C3D83C /* Facebook.png in Resources */,
 				68854006199D4A2D00512543 /* Icon-Small.png in Resources */,
 				6885400F199D4A2D00512543 /* reload-50@2x.png in Resources */,
 				68853FF6199D4A1B00512543 /* Images.xcassets in Resources */,
@@ -473,6 +483,7 @@
 				6885400E199D4A2D00512543 /* reload-32.png in Resources */,
 				6885400D199D4A2D00512543 /* washing_machine-32.png in Resources */,
 				68854011199D4A2D00512543 /* trolley-50@2x.png in Resources */,
+				681D873B199DF78700C3D83C /* Facebook@2x.png in Resources */,
 				6885400A199D4A2D00512543 /* washing_machine-48@2x.png in Resources */,
 				68854009199D4A2D00512543 /* Icon-40@2x.png in Resources */,
 				68854010199D4A2D00512543 /* restaurant-50@2x.png in Resources */,
@@ -480,6 +491,7 @@
 				68854014199D4A2D00512543 /* as.png in Resources */,
 				6885400C199D4A2D00512543 /* dry-64@2x.png in Resources */,
 				68854013199D4A2D00512543 /* trolley-32.png in Resources */,
+				681D8737199DF71F00C3D83C /* Default@2x.png in Resources */,
 				68854008199D4A2D00512543 /* Icon-60@2x.png in Resources */,
 				68854012199D4A2D00512543 /* restaurant-32.png in Resources */,
 			);
@@ -737,6 +749,7 @@
 				68853FC1199D480B00512543 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68853FC2199D480B00512543 /* Build configuration list for PBXNativeTarget "AllAroundUTests" */ = {
 			isa = XCConfigurationList;
@@ -745,6 +758,7 @@
 				68853FC4199D480B00512543 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

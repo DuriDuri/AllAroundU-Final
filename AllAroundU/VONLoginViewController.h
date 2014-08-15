@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VONLoginViewController : UIViewController
+@interface VONLoginViewController : UIViewController<NSURLConnectionDataDelegate>
 
 @end
