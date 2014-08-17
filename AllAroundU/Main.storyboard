@@ -203,7 +203,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Campus Menu" id="LaE-a7-LC7">
                         <barButtonItem key="rightBarButtonItem" image="Reload" id="bdQ-1z-M4s">
-                            <color key="tintColor" red="0.54509806630000002" green="0.0" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="tintColor" red="1" green="0.82352948189999997" blue="0.38823533059999998" alpha="1" colorSpace="deviceRGB"/>
                             <connections>
                                 <action selector="refreshBarButtonPressed:" destination="ckr-yS-obf" id="3CY-fZ-Ed6"/>
                             </connections>

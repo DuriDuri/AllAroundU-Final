@@ -16,6 +16,8 @@
 - (IBAction)mapTerrainSC:(UISegmentedControl *)sender;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *terainSegmentedControl;
 
+@property (strong, nonatomic) NSTimer *updateLocation;
+
 - (IBAction)updateUserLocationButtonPressed:(UIButton *)sender;
 
 
@@ -48,6 +50,9 @@
     
     [self addTrolleyPath];
 
+    //Update Trolley Location
+    self.updateLocation = [NSTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(updateTrolleyLocation) userInfo:nil repeats:YES];
+    
     //Laundry TEST
     
     
