@@ -62,13 +62,22 @@
 */
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
+    
+    //Start the ActivityIndicator
     self.loginActivityIndicator.hidden = NO;
     [self.loginActivityIndicator startAnimating];
     
     
-    NSArray *permissionsArray = @[@"user_about_me", @"user_relationships", @"user_birthday", @"user_location"];
+    //Choose Permissions
+    NSArray *permissionsArray = @[@"public_profile",
+                                  @"email",
+                                  @"user_birthday",
+                                  @"user_location",
+                                  @"user_friends"];
     
+    //Login Funcationality
     [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
+        
         [self.loginActivityIndicator stopAnimating];
         self.loginActivityIndicator.hidden = YES;
         

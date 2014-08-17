@@ -48,5 +48,25 @@ extern NSString *const kVONWebster;
 extern NSString *const kVONWellsHouse;
 extern NSString *const kVONWest;
 
+#pragma mark -User Detail Profile
+
+extern NSString *const kVONUserTagLineKey;
+
+
+extern NSString *const kVONUserProfileKey;
+extern NSString *const kVONUserProfileNameKey;
+extern NSString *const kVONUserProfileFirstNameKey;
+extern NSString *const kVONUserProfileLocation;
+extern NSString *const kVONUserProfileGender;
+extern NSString *const kVONUserProfileBirthday;
+extern NSString *const kVONUserProfileInterestedIn;
+extern NSString *const kVONUserProfilePictureURL;
+extern NSString *const kVONUserProfileRelationshipStatusKey;
+extern NSString *const kVONUserProfileAgeKey;
+
+#pragma mark - Photo
+extern NSString *const kVONPhotoClassKey;
+extern NSString *const kVONPhotoUserKey;
+extern NSString *const kVONPhotoPictureKey;
 
 @end

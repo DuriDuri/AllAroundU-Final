@@ -64,7 +64,6 @@
 		6885402D199D521100512543 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6885402C199D521100512543 /* QuartzCore.framework */; };
 		6885402F199D521D00512543 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6885402E199D521D00512543 /* Security.framework */; };
 		68854031199D522A00512543 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68854030199D522A00512543 /* Social.framework */; };
-		68854033199D523400512543 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68854032199D523400512543 /* StoreKit.framework */; };
 		68854035199D523D00512543 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68854034199D523D00512543 /* SystemConfiguration.framework */; };
 		68854038199D579F00512543 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68854037199D579F00512543 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
@@ -156,7 +155,6 @@
 		6885402C199D521100512543 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6885402E199D521D00512543 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		68854030199D522A00512543 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		68854032199D523400512543 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		68854034199D523D00512543 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		68854037199D579F00512543 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,7 +165,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				68854035199D523D00512543 /* SystemConfiguration.framework in Frameworks */,
-				68854033199D523400512543 /* StoreKit.framework in Frameworks */,
 				68854031199D522A00512543 /* Social.framework in Frameworks */,
 				6885402F199D521D00512543 /* Security.framework in Frameworks */,
 				6885402D199D521100512543 /* QuartzCore.framework in Frameworks */,
@@ -223,7 +220,6 @@
 			children = (
 				68854037199D579F00512543 /* FacebookSDK.framework */,
 				68854034199D523D00512543 /* SystemConfiguration.framework */,
-				68854032199D523400512543 /* StoreKit.framework */,
 				68854030199D522A00512543 /* Social.framework */,
 				6885402E199D521D00512543 /* Security.framework */,
 				6885402C199D521100512543 /* QuartzCore.framework */,
@@ -439,6 +435,9 @@
 					68853F8C199D480B00512543 = {
 						DevelopmentTeam = X392B6U9BU;
 						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
 							com.apple.iOS = {
 								enabled = 0;
 							};

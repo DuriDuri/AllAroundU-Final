@@ -16,12 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EG3-UU-Fa4">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EG3-UU-Fa4">
                                 <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="tintColor" red="0.54509806630000002" green="0.0" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
                             </mapView>
-                            <segmentedControl clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8eN-7k-T4O">
+                            <segmentedControl clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8eN-7k-T4O">
                                 <rect key="frame" x="55" y="471" width="209" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -35,7 +35,7 @@
                                     <action selector="mapTerrainSC:" destination="CZ4-MO-1fc" eventType="valueChanged" id="62S-7f-hEN"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiS-HY-HVX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiS-HY-HVX">
                                 <rect key="frame" x="272" y="471" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -48,6 +48,18 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EG3-UU-Fa4" firstAttribute="top" secondItem="2VE-Yg-loa" secondAttribute="top" constant="20" symbolic="YES" id="2XQ-Ww-Qfb"/>
+                            <constraint firstItem="PiS-HY-HVX" firstAttribute="top" secondItem="8eN-7k-T4O" secondAttribute="top" id="BgY-kQ-IXl"/>
+                            <constraint firstAttribute="trailing" secondItem="EG3-UU-Fa4" secondAttribute="trailing" id="DRA-SY-QdN"/>
+                            <constraint firstItem="PiS-HY-HVX" firstAttribute="leading" secondItem="8eN-7k-T4O" secondAttribute="trailing" constant="8" symbolic="YES" id="LSE-Fw-GOz"/>
+                            <constraint firstItem="8eN-7k-T4O" firstAttribute="trailing" secondItem="EG3-UU-Fa4" secondAttribute="trailing" constant="-56" id="Xtg-5M-6Gr"/>
+                            <constraint firstItem="EG3-UU-Fa4" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" id="b72-5C-UWq"/>
+                            <constraint firstItem="dtj-EO-iXF" firstAttribute="top" secondItem="PiS-HY-HVX" secondAttribute="bottom" constant="20" id="fXv-9K-vyn"/>
+                            <constraint firstItem="dtj-EO-iXF" firstAttribute="top" secondItem="EG3-UU-Fa4" secondAttribute="bottom" id="ofX-EN-Cdl"/>
+                            <constraint firstItem="8eN-7k-T4O" firstAttribute="top" secondItem="EG3-UU-Fa4" secondAttribute="bottom" constant="-48" id="snA-Z5-bO0"/>
+                            <constraint firstAttribute="trailing" secondItem="PiS-HY-HVX" secondAttribute="trailing" constant="20" symbolic="YES" id="ssf-uI-l5g"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Campus Trolley" image="Trolley" id="u1e-5L-l1D"/>
                     <connections>
@@ -97,7 +109,7 @@
                     <connections>
                         <outlet property="loginActivityIndicator" destination="ae7-h8-BPc" id="Rpb-DH-hrq"/>
                         <outlet property="loginImageView" destination="hAJ-fx-LOx" id="hiP-ZS-i3B"/>
-                        <segue destination="8YX-ce-x5E" kind="push" identifier="loggedInSegue" id="uNG-Gv-hUM"/>
+                        <segue destination="8YX-ce-x5E" kind="modal" identifier="loggedInSegue" modalTransitionStyle="flipHorizontal" id="uNG-Gv-hUM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OXI-WS-cDB" userLabel="First Responder" sceneMemberID="firstResponder"/>

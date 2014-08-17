@@ -47,4 +47,25 @@ NSString *const kVONGreenSorum4                 =@"Green/Sorum 4th floor";
 NSString *const kVONWebster                     =@"Webster";
 NSString *const kVONWellsHouse                  =@"Wells House";
 NSString *const kVONWest                        =@"West";
+
+
+#pragma mark - User Class Details
+NSString *const kVONUserTagLineKey = @"tagLine";
+
+NSString *const kVONUserProfileKey                      = @"profile";
+NSString *const kVONUserProfileNameKey                  = @"name";
+NSString *const kVONUserProfileFirstNameKey             = @"firstNameKey";
+NSString *const kVONUserProfileLocation                 = @"location";
+NSString *const kVONUserProfileGender                   = @"gender";
+NSString *const kVONUserProfileBirthday                 = @"birthday";
+NSString *const kVONUserProfileInterestedIn             = @"interestedIn";
+NSString *const kVONUserProfilePictureURL               =@"pictureURL";
+NSString *const kVONUserProfileRelationshipStatusKey    = @"relationshipStatus";
+NSString *const kVONUserProfileAgeKey                   = @"age";
+
+#pragma mark - Photo Class
+NSString *const kVONPhotoClassKey       = @"Photo";
+NSString *const kVONPhotoUserKey        = @"user";
+NSString *const kVONPhotoPictureKey     = @"image";
+
 @end
