@@ -12,10 +12,13 @@
 #import "Reachability.h"
 
 @interface VONLaundryDetailViewController ()
-@property (strong, nonatomic) IBOutlet UITableView *washerTableView;
-@property (strong, nonatomic) IBOutlet UITableView *dryerTableView;
+@property (strong, nonatomic) IBOutlet UITableView *laundryStatusTableView;
+//@property (strong, nonatomic) IBOutlet UITableView *dryerTableView;
 
 @property (strong, nonatomic) NSMutableDictionary *laundryDetails;
+@property (strong, nonatomic) NSMutableArray *dryerStatus;
+@property (strong, nonatomic) NSMutableArray *washerStatus;
+
 
 - (IBAction)reloadButtonPressed:(UIBarButtonItem *)sender;
 @end
@@ -51,11 +54,9 @@
         [alert show];
     }
     else{
-        self.washerTableView.delegate = self;
-        self.washerTableView.dataSource = self;
+        self.laundryStatusTableView.delegate = self;
+        self.laundryStatusTableView.dataSource = self;
         
-        self.dryerTableView.delegate = self;
-        self.dryerTableView.dataSource = self;
         
         //NSLog(@"%@", self.detailedLaundryRoomURL);
         
@@ -81,34 +82,33 @@
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([tableView isEqual:self.washerTableView]) {
-        static NSString *washerCells = @"WasherCells";
-        UITableViewCell *washerCell = [self.washerTableView dequeueReusableCellWithIdentifier:washerCells forIndexPath:indexPath];
-        washerCell.textLabel.text = [self.laundryDetails objectForKey:@"Washing Machines"][indexPath.row];
-        
-        
-        
-        return washerCell;
+    static NSString *washerCells = @"StatusCell";
+    UITableViewCell *statusCell = [self.laundryStatusTableView dequeueReusableCellWithIdentifier:washerCells forIndexPath:indexPath];
+
+    if (indexPath.section == 0){
+        statusCell.imageView.image = [UIImage imageNamed:@"WashingMachineIcon"];
+        statusCell.textLabel.text = [self.laundryDetails objectForKey:@"Washing Machines"][indexPath.row];
     }
-    else {
-        static NSString *dryerCells = @"DryerCells";
-        UITableViewCell *dryerCell = [self.dryerTableView dequeueReusableCellWithIdentifier:dryerCells forIndexPath:indexPath];
-        dryerCell.textLabel.text = [self.laundryDetails objectForKey:@"Dryers"][indexPath.row];
-        
-        return dryerCell;
+    if (indexPath.section == 1){
+        statusCell.imageView.image = [UIImage imageNamed:@"DryerIcon"];
+        statusCell.textLabel.text = [self.laundryDetails objectForKey:@"Dryers"][indexPath.row];
     }
+    
+        
+    return statusCell;
+
     
 }
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if ([tableView isEqual:self.washerTableView]) return [[self.laundryDetails objectForKey:@"Washing Machines"]count];
+    if (section == 0) return [[self.laundryDetails objectForKey:@"Washing Machines"]count];
     else return [[self.laundryDetails objectForKey:@"Dryers"]count];
 }
 
@@ -116,8 +116,8 @@
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    if ([tableView isEqual:self.washerTableView ]) return @"Washing Machines";
-    else if ([tableView isEqual:self.dryerTableView ]) return @"Dryers";
+    if (section == 0) return @"Washing Machines";
+    else if (section == 1) return @"Dryers";
     else return @"";
 }
 
@@ -134,7 +134,6 @@
 
 - (IBAction)reloadButtonPressed:(UIBarButtonItem *)sender {
     [self viewDidLoad];
-    [self.dryerTableView reloadData];
-    [self.washerTableView reloadData];
+    [self.laundryStatusTableView reloadData];
 }
 @end

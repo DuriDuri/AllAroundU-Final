@@ -164,13 +164,14 @@
                                     <action selector="diningHallSC:" destination="ckr-yS-obf" eventType="valueChanged" id="sn6-6P-swh"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sW8-iX-cXM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="60" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sW8-iX-cXM">
                                 <rect key="frame" x="0.0" y="101" width="320" height="417"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.54509806632995605" green="0.0" blue="0.027450982481241226" alpha="1" colorSpace="deviceRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="5xd-cD-mtI" rowHeight="60" style="IBUITableViewCellStyleDefault" id="Llq-TR-7zl">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="60" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Llq-TR-7zl" id="BJX-Rj-jbU">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
@@ -247,8 +248,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="VQI-Mr-cwb">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="517"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="VQI-Mr-cwb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -273,6 +274,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VQI-Mr-cwb" secondAttribute="trailing" id="0Rl-tT-yug"/>
+                            <constraint firstAttribute="bottom" secondItem="VQI-Mr-cwb" secondAttribute="bottom" id="A6T-33-UNn"/>
+                            <constraint firstItem="VQI-Mr-cwb" firstAttribute="top" secondItem="XLj-6F-2dA" secondAttribute="top" id="Rvx-jU-eKq"/>
+                            <constraint firstItem="VQI-Mr-cwb" firstAttribute="leading" secondItem="XLj-6F-2dA" secondAttribute="leading" id="iMJ-JM-0I6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Laundry Tracker" id="iQl-t7-GpP"/>
                     <connections>
@@ -296,57 +303,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="POE-w5-l6y">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="289"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="60" sectionHeaderHeight="40" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="POE-w5-l6y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WasherCells" textLabel="A4D-Sx-rb5" imageView="LfZ-DG-xoS" rowHeight="60" style="IBUITableViewCellStyleDefault" id="cJn-u2-ovo">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="60"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StatusCell" textLabel="A4D-Sx-rb5" rowHeight="60" style="IBUITableViewCellStyleDefault" id="cJn-u2-ovo">
+                                        <rect key="frame" x="0.0" y="104" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cJn-u2-ovo" id="aIX-qO-WvI">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A4D-Sx-rb5">
-                                                    <rect key="frame" x="62" y="0.0" width="243" height="59"/>
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="59"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="WashingMachineIcon" id="LfZ-DG-xoS">
-                                                    <rect key="frame" x="15" y="13" width="32" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bcB-ju-13h">
-                                <rect key="frame" x="0.0" y="268" width="320" height="252"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DryerCells" textLabel="qTk-E9-m1m" imageView="Tc2-WB-brN" rowHeight="60" style="IBUITableViewCellStyleDefault" id="B3W-uC-ElC">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B3W-uC-ElC" id="6oy-wT-rYI">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qTk-E9-m1m">
-                                                    <rect key="frame" x="62" y="0.0" width="243" height="59"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="DryerIcon" id="Tc2-WB-brN">
-                                                    <rect key="frame" x="15" y="13" width="32" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -354,17 +329,23 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="POE-w5-l6y" firstAttribute="top" secondItem="pee-wL-tuf" secondAttribute="top" id="51M-ND-H9F"/>
+                            <constraint firstAttribute="bottom" secondItem="POE-w5-l6y" secondAttribute="bottom" id="YYz-3t-sWE"/>
+                            <constraint firstAttribute="trailing" secondItem="POE-w5-l6y" secondAttribute="trailing" id="fru-cU-0gs"/>
+                            <constraint firstItem="POE-w5-l6y" firstAttribute="leading" secondItem="pee-wL-tuf" secondAttribute="leading" id="yAa-I9-W0X"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nsN-x4-Oz1">
                         <barButtonItem key="rightBarButtonItem" image="Reload" id="SWE-QB-Sit">
+                            <color key="tintColor" red="1" green="0.82352948189999997" blue="0.38823533059999998" alpha="1" colorSpace="deviceRGB"/>
                             <connections>
                                 <action selector="reloadButtonPressed:" destination="odY-5b-tv9" id="Sdp-Qf-Han"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="dryerTableView" destination="bcB-ju-13h" id="JdO-cX-1aM"/>
-                        <outlet property="washerTableView" destination="POE-w5-l6y" id="9Zy-8K-GGB"/>
+                        <outlet property="laundryStatusTableView" destination="POE-w5-l6y" id="o7Y-2U-8qI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzc-x6-Qys" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -398,7 +379,6 @@
     </scenes>
     <resources>
         <image name="Default.png" width="320" height="480"/>
-        <image name="DryerIcon" width="32" height="32"/>
         <image name="Facebook.png" width="200" height="25"/>
         <image name="Menu" width="32" height="32"/>
         <image name="Reload" width="32" height="32"/>
@@ -406,7 +386,7 @@
         <image name="WashingMachineIcon" width="32" height="32"/>
         <image name="as.png" width="44" height="44"/>
     </resources>
-    <color key="tintColor" red="0.54509806632995605" green="0.0" blue="0.027450982481241226" alpha="1" colorSpace="deviceRGB"/>
+    <color key="tintColor" red="0.62745100259780884" green="0.23137256503105164" blue="0.24705883860588074" alpha="1" colorSpace="deviceRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
