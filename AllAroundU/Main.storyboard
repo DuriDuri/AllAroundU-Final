@@ -151,7 +151,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oW4-Mb-WeK">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oW4-Mb-WeK">
                                 <rect key="frame" x="0.0" y="65" width="320" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -164,7 +164,7 @@
                                     <action selector="diningHallSC:" destination="ckr-yS-obf" eventType="valueChanged" id="sn6-6P-swh"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sW8-iX-cXM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sW8-iX-cXM">
                                 <rect key="frame" x="0.0" y="101" width="320" height="417"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -190,6 +190,15 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BMN-eK-Pge" firstAttribute="top" secondItem="sW8-iX-cXM" secondAttribute="bottom" constant="1" id="5Do-l1-9fZ"/>
+                            <constraint firstItem="sW8-iX-cXM" firstAttribute="leading" secondItem="Gre-tr-xN9" secondAttribute="leading" id="5nJ-T2-kvt"/>
+                            <constraint firstItem="oW4-Mb-WeK" firstAttribute="trailing" secondItem="sW8-iX-cXM" secondAttribute="trailing" id="7VX-pK-bzc"/>
+                            <constraint firstItem="oW4-Mb-WeK" firstAttribute="leading" secondItem="sW8-iX-cXM" secondAttribute="leading" id="Qjs-oX-PeR"/>
+                            <constraint firstItem="sW8-iX-cXM" firstAttribute="top" secondItem="oW4-Mb-WeK" secondAttribute="bottom" constant="8" symbolic="YES" id="l7W-bP-8cT"/>
+                            <constraint firstAttribute="trailing" secondItem="sW8-iX-cXM" secondAttribute="trailing" id="uQz-p1-cHC"/>
+                            <constraint firstItem="oW4-Mb-WeK" firstAttribute="top" secondItem="gx5-R7-s8g" secondAttribute="bottom" constant="1" id="xht-Is-68f"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Campus Menu" id="LaE-a7-LC7">
                         <barButtonItem key="rightBarButtonItem" image="Reload" id="bdQ-1z-M4s">
