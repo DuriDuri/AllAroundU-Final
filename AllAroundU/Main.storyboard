@@ -83,11 +83,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="hAJ-fx-LOx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="hAJ-fx-LOx">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="489"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1g-H6-Sco">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1g-H6-Sco">
                                 <rect key="frame" x="52" y="453" width="217" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -99,12 +99,23 @@
                                     <action selector="loginButtonPressed:" destination="wbc-UC-Kzs" eventType="touchUpInside" id="jf1-lJ-CLF"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ae7-h8-BPc">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ae7-h8-BPc">
                                 <rect key="frame" x="150" y="380" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ae7-h8-BPc" firstAttribute="top" secondItem="JDN-ag-hy3" secondAttribute="bottom" constant="360" id="9fS-ck-veA"/>
+                            <constraint firstItem="hAJ-fx-LOx" firstAttribute="leading" secondItem="zSD-j3-GQh" secondAttribute="leading" id="BwU-KC-h0s"/>
+                            <constraint firstItem="l1g-H6-Sco" firstAttribute="top" secondItem="ae7-h8-BPc" secondAttribute="bottom" constant="53" id="M3X-jk-rIm"/>
+                            <constraint firstItem="l1g-H6-Sco" firstAttribute="bottom" secondItem="hAJ-fx-LOx" secondAttribute="bottom" id="NdD-aT-ZKg"/>
+                            <constraint firstItem="l1g-H6-Sco" firstAttribute="leading" secondItem="zSD-j3-GQh" secondAttribute="leading" constant="52" id="Sgd-uD-gSv"/>
+                            <constraint firstItem="ae7-h8-BPc" firstAttribute="centerX" secondItem="hAJ-fx-LOx" secondAttribute="centerX" id="TXs-re-frh"/>
+                            <constraint firstItem="l1g-H6-Sco" firstAttribute="centerX" secondItem="ae7-h8-BPc" secondAttribute="centerX" id="dD5-LT-yaH"/>
+                            <constraint firstItem="vAY-7f-kTC" firstAttribute="top" secondItem="hAJ-fx-LOx" secondAttribute="bottom" constant="79" id="sSB-3M-2Oq"/>
+                            <constraint firstItem="hAJ-fx-LOx" firstAttribute="top" secondItem="zSD-j3-GQh" secondAttribute="top" id="sl8-EL-DKq"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="loginActivityIndicator" destination="ae7-h8-BPc" id="Rpb-DH-hrq"/>
@@ -164,14 +175,14 @@
                                     <action selector="diningHallSC:" destination="ckr-yS-obf" eventType="valueChanged" id="sn6-6P-swh"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="60" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sW8-iX-cXM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="44" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sW8-iX-cXM">
                                 <rect key="frame" x="0.0" y="101" width="320" height="417"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" red="0.54509806632995605" green="0.0" blue="0.027450982481241226" alpha="1" colorSpace="deviceRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="5xd-cD-mtI" rowHeight="60" style="IBUITableViewCellStyleDefault" id="Llq-TR-7zl">
-                                        <rect key="frame" x="0.0" y="60" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="44" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Llq-TR-7zl" id="BJX-Rj-jbU">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
@@ -202,6 +213,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Campus Menu" id="LaE-a7-LC7">
+                        <barButtonItem key="leftBarButtonItem" image="LogOut" id="xqo-zE-K5Q">
+                            <color key="tintColor" red="1" green="0.82352948189999997" blue="0.38823533059999998" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <action selector="logoutBarButtonPressed:" destination="ckr-yS-obf" id="CCH-fU-hsB"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="Reload" id="bdQ-1z-M4s">
                             <color key="tintColor" red="1" green="0.82352948189999997" blue="0.38823533059999998" alpha="1" colorSpace="deviceRGB"/>
                             <connections>
@@ -380,6 +397,7 @@
     <resources>
         <image name="Default.png" width="320" height="480"/>
         <image name="Facebook.png" width="200" height="25"/>
+        <image name="LogOut" width="32" height="32"/>
         <image name="Menu" width="32" height="32"/>
         <image name="Reload" width="32" height="32"/>
         <image name="Trolley" width="32" height="32"/>

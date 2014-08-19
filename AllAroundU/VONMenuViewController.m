@@ -17,6 +17,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 - (IBAction)diningHallSC:(UISegmentedControl *)sender;
 - (IBAction)refreshBarButtonPressed:(UIBarButtonItem *)sender;
+- (IBAction)logoutBarButtonPressed:(UIBarButtonItem *)sender;
 
 //Todays Date
 @property (strong, nonatomic) NSString *dayToday;
@@ -201,5 +202,10 @@
 
 - (IBAction)refreshBarButtonPressed:(UIBarButtonItem *)sender {
     [self viewDidLoad];
+}
+
+- (IBAction)logoutBarButtonPressed:(UIBarButtonItem *)sender {
+    [PFUser logOut];
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 @end

@@ -15,11 +15,14 @@
     // Override point for customization after application launch.
     
     //Navigation Bar and Title Color
-    UIColor * garnetColor = [UIColor colorWithRed:139/255.0f green:24/255.0f blue:26/255.0f alpha:1.0f];
-    UIColor * yellowColor = [UIColor colorWithRed:255/255.0f green:210/255.0f blue:99/255.0f alpha:1.0f];
+    UIColor * garnetColor = [UIColor colorWithRed:139/255.0f green:24/255.0f blue:26/255.0f alpha:1.0f]; //8E151E
+    UIColor * yellowColor = [UIColor colorWithRed:255/255.0f green:210/255.0f blue:99/255.0f alpha:1.0f]; //FFD263
     [[UINavigationBar appearance] setBarTintColor:garnetColor];
     [[UINavigationBar appearance] setTintColor:yellowColor];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: yellowColor}];
+    
+    //Set Tab Bar Tint
+    [[UITabBar appearance] setTintColor:yellowColor];
     
     //Parse Integration
     [Parse setApplicationId:@"NHM8BqHoR5R5mi4SuzU0GnVacAWtrN8sWalAPcsE"

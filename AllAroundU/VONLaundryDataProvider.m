@@ -34,7 +34,7 @@
     }
     
     //Extract Dryers
-    for (int i =machines.count /2; i < [machines count] ; i++) {
+    for (int i = (int)machines.count /2; i < [machines count] ; i++) {
         TFHppleElement *dryer = machines[i];
         NSString *state = [dryer text];
         NSString *formatedStateString = [state stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
