@@ -22,3 +22,7 @@
 #define DINING_MENU_URL "http://www.uniondining.com/menus.html"
 #define ROOT_DINING_URL "http://www.uniondining.com/"
 #define LAUNDRY_URL "http://www.laundryview.com/lvs.php?s=340"
+
+
+//Tokens
+#define MIXPANEL_TOKEN @"863ff45561087d70917a7ec9dbbed23f"
