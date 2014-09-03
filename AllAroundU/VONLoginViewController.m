@@ -86,22 +86,30 @@
                 NSLog(@"Uh oh. The user cancelled the Facebook login.");
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Error" message:@"You cancelled the Facebook login" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
                 [alert show];
-            } else {
+            }
+            else {
                 NSLog(@"Uh oh. An error occurred: %@", error);
                 NSString *S = [error localizedDescription];
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Error" message:S delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
                 [alert show];
             }
-        } else if (user.isNew) {
+        }
+        else if (user.isNew) {
             NSLog(@"User with facebook signed up and logged in!");
             [self updateUserInformation];
             [self performSegueWithIdentifier:@"loggedInSegue" sender:self];
-        } else {
+        }
+        else {
             NSLog(@"User with facebook logged in!");
             [self updateUserInformation];
             [self performSegueWithIdentifier:@"loggedInSegue" sender:self];
         }
     }];
+    
+    //Mixpanel Analytics
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Facebook Login"];
+    [mixpanel flush];
 }
 
 #pragma mark - NSURL Data Delegate Methods

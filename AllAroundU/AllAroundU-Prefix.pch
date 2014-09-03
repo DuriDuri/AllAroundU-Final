@@ -16,6 +16,7 @@
     #import "VONConstants.h"
     #import <FacebookSDK/FacebookSDK.h>
     #import <Parse/Parse.h>
+    #import <Mixpanel.h>
 #endif
 
 #define TROLLEY_URL "http://trolley.union.edu"

@@ -90,6 +90,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self performSegueWithIdentifier:@"toLaundryDetailVC" sender:indexPath];
+    
+    //Mixpanel Analytics
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Select Laundry Room" properties:@{@"Room": [NSString stringWithFormat:@"%@", [self.laundryRooms objectAtIndex:indexPath.row ] ]}];
+    [mixpanel flush];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

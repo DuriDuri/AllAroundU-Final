@@ -65,7 +65,7 @@
     }
     else
     {
-        // connected, do some internet stuff
+        // connected,
         
         //TableView instances
         self.tableView.delegate = self;
@@ -142,10 +142,7 @@
     static NSString *cellIdentifier = @"Cell";
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    if (indexPath.section ==0){
-        TFHppleElement *meal = [self.todaysMenu objectForKey:kVONBreakfastKey][indexPath.row];
-        cell.textLabel.text =[meal text];
-    }
+    if (indexPath.section ==0) cell.textLabel.text =[[self.todaysMenu objectForKey:kVONBreakfastKey][indexPath.row] text];
     if (indexPath.section ==1) cell.textLabel.text =[[self.todaysMenu objectForKey:kVONLunchKey][indexPath.row] text];
     if (indexPath.section ==2) cell.textLabel.text =[[self.todaysMenu objectForKey:kVONDinnerKey][indexPath.row] text];
 
@@ -202,6 +199,11 @@
 
 - (IBAction)refreshBarButtonPressed:(UIBarButtonItem *)sender {
     [self viewDidLoad];
+    
+    //Mixpanel Analytics
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Menu Refresh"];
+    [mixpanel flush];
 }
 
 - (IBAction)logoutBarButtonPressed:(UIBarButtonItem *)sender {

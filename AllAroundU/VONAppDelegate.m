@@ -24,16 +24,29 @@
     //Set Tab Bar Tint
     [[UITabBar appearance] setTintColor:yellowColor];
     
+    
+    
+    
     //Parse Integration
     [Parse setApplicationId:@"NHM8BqHoR5R5mi4SuzU0GnVacAWtrN8sWalAPcsE"
                   clientKey:@"vpmvuy4VhPeTJlM6Dzhrr4P7Y0Gr3RJxLNHhBjJr"];
     
+    
+    
     //Initialize Parse Analytics
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
     
     //Initialize FaceBookSDK
     [PFFacebookUtils initializeFacebook];
     [FBLoginView class];
+   
+    
+    //Initialize MixPanel
+    [Mixpanel sharedInstanceWithToken:MIXPANEL_TOKEN];
+    
+    
     return YES;
 }
 							

@@ -70,6 +70,8 @@
     
     //Add pin to map
     [self.trolleyMapView addAnnotation:self.trolley];
+    
+   // [self.terainSegmentedControl ]
 }
 
 - (void)didReceiveMemoryWarning

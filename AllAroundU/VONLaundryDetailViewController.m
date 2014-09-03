@@ -135,5 +135,10 @@
 - (IBAction)reloadButtonPressed:(UIBarButtonItem *)sender {
     [self viewDidLoad];
     [self.laundryStatusTableView reloadData];
+    
+    //Mixpanel Analytics
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Refresh Laundry"];
+    [mixpanel flush];
 }
 @end

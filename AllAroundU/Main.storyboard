@@ -16,12 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EG3-UU-Fa4">
+                            <mapView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" scrollEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EG3-UU-Fa4">
                                 <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="tintColor" red="0.54509806630000002" green="0.0" blue="0.02745098248" alpha="1" colorSpace="deviceRGB"/>
                             </mapView>
-                            <segmentedControl clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8eN-7k-T4O">
+                            <segmentedControl autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8eN-7k-T4O">
                                 <rect key="frame" x="55" y="471" width="209" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -88,7 +88,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1g-H6-Sco">
-                                <rect key="frame" x="52" y="453" width="217" height="36"/>
+                                <rect key="frame" x="52" y="453" width="217" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Login with Facebook" backgroundImage="Facebook.png">
@@ -106,15 +106,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ae7-h8-BPc" firstAttribute="top" secondItem="JDN-ag-hy3" secondAttribute="bottom" constant="360" id="9fS-ck-veA"/>
-                            <constraint firstItem="hAJ-fx-LOx" firstAttribute="leading" secondItem="zSD-j3-GQh" secondAttribute="leading" id="BwU-KC-h0s"/>
-                            <constraint firstItem="l1g-H6-Sco" firstAttribute="top" secondItem="ae7-h8-BPc" secondAttribute="bottom" constant="53" id="M3X-jk-rIm"/>
-                            <constraint firstItem="l1g-H6-Sco" firstAttribute="bottom" secondItem="hAJ-fx-LOx" secondAttribute="bottom" id="NdD-aT-ZKg"/>
-                            <constraint firstItem="l1g-H6-Sco" firstAttribute="leading" secondItem="zSD-j3-GQh" secondAttribute="leading" constant="52" id="Sgd-uD-gSv"/>
-                            <constraint firstItem="ae7-h8-BPc" firstAttribute="centerX" secondItem="hAJ-fx-LOx" secondAttribute="centerX" id="TXs-re-frh"/>
-                            <constraint firstItem="l1g-H6-Sco" firstAttribute="centerX" secondItem="ae7-h8-BPc" secondAttribute="centerX" id="dD5-LT-yaH"/>
-                            <constraint firstItem="vAY-7f-kTC" firstAttribute="top" secondItem="hAJ-fx-LOx" secondAttribute="bottom" constant="79" id="sSB-3M-2Oq"/>
-                            <constraint firstItem="hAJ-fx-LOx" firstAttribute="top" secondItem="zSD-j3-GQh" secondAttribute="top" id="sl8-EL-DKq"/>
+                            <constraint firstItem="hAJ-fx-LOx" firstAttribute="leading" secondItem="zSD-j3-GQh" secondAttribute="leading" id="0uI-TK-lYj"/>
+                            <constraint firstItem="l1g-H6-Sco" firstAttribute="top" secondItem="ae7-h8-BPc" secondAttribute="bottom" constant="53" id="GM5-Y4-8qw"/>
+                            <constraint firstItem="l1g-H6-Sco" firstAttribute="leading" secondItem="zSD-j3-GQh" secondAttribute="leading" constant="52" id="Kv7-vP-tQb"/>
+                            <constraint firstItem="ae7-h8-BPc" firstAttribute="centerX" secondItem="hAJ-fx-LOx" secondAttribute="centerX" id="Lcc-C6-yFM"/>
+                            <constraint firstItem="vAY-7f-kTC" firstAttribute="top" secondItem="l1g-H6-Sco" secondAttribute="bottom" constant="90" id="MVA-1W-nNv"/>
+                            <constraint firstItem="hAJ-fx-LOx" firstAttribute="top" secondItem="zSD-j3-GQh" secondAttribute="top" id="TJj-bv-drz"/>
+                            <constraint firstItem="vAY-7f-kTC" firstAttribute="top" secondItem="hAJ-fx-LOx" secondAttribute="bottom" constant="79" id="hCU-90-eGx"/>
+                            <constraint firstItem="ae7-h8-BPc" firstAttribute="centerX" secondItem="l1g-H6-Sco" secondAttribute="centerX" id="xdf-fI-hLG"/>
                         </constraints>
                     </view>
                     <connections>
