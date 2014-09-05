@@ -61,12 +61,12 @@
         //NSLog(@"%@", self.detailedLaundryRoomURL);
         
         self.laundryDetails = [VONLaundryDataProvider getLaundryData:self.detailedLaundryRoomURL];
-        NSLog(@"%@", self.laundryDetails);
+        //NSLog(@"%@", self.laundryDetails);
         
         if ([[self.laundryDetails objectForKey:@"Washing Machines"] count] ==0  ) {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network Settings"
                                                             message:@"To insure student privacy, please connect to the internet through ResNet or the Union network!" delegate:nil cancelButtonTitle:@"Got it!" otherButtonTitles:nil];
-            NSLog(@"Empty List");
+            //NSLog(@"Empty List");
             [alert show];
         }
     }
@@ -121,16 +121,7 @@
     else return @"";
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)reloadButtonPressed:(UIBarButtonItem *)sender {
     [self viewDidLoad];

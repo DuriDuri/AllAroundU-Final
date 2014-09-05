@@ -144,11 +144,14 @@
             NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID]];
             
             NSMutableDictionary *userProfile = [[NSMutableDictionary alloc] initWithCapacity:8];
+            NSLog(@"%@", userDictionary);
             if (userDictionary[@"name"]) userProfile[kVONUserProfileNameKey] = userDictionary [@"name"];
             
             if (userDictionary[@"first_name"]) userProfile[kVONUserProfileFirstNameKey] = userDictionary[@"first_name"];
             
             if (userDictionary[@"location"][@"name"]) userProfile[kVONUserProfileLocation] = userDictionary[@"location"][@"name"];
+            
+            if (userDictionary[@"email"]) userProfile[kVONUserProfileEmailKey] = userDictionary[@"email"];
             
             if (userDictionary[@"gender"]) userProfile[kVONUserProfileGender] = userDictionary[@"gender"];
             

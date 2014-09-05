@@ -63,6 +63,7 @@ extern NSString *const kVONUserProfileInterestedIn;
 extern NSString *const kVONUserProfilePictureURL;
 extern NSString *const kVONUserProfileRelationshipStatusKey;
 extern NSString *const kVONUserProfileAgeKey;
+extern NSString *const kVONUserProfileEmailKey;
 
 #pragma mark - Photo
 extern NSString *const kVONPhotoClassKey;

@@ -62,6 +62,7 @@ NSString *const kVONUserProfileInterestedIn             = @"interestedIn";
 NSString *const kVONUserProfilePictureURL               =@"pictureURL";
 NSString *const kVONUserProfileRelationshipStatusKey    = @"relationshipStatus";
 NSString *const kVONUserProfileAgeKey                   = @"age";
+NSString *const kVONUserProfileEmailKey                 = @"email";
 
 #pragma mark - Photo Class
 NSString *const kVONPhotoClassKey       = @"Photo";
