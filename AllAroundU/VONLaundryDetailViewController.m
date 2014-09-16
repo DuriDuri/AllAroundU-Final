@@ -69,6 +69,10 @@
             //NSLog(@"Empty List");
             [alert show];
         }
+        //Mixpanel Analytics
+        Mixpanel *mixpanel = [Mixpanel sharedInstance];
+        [mixpanel track:@"Open Detailed Laundry Tracker"];
+        [mixpanel flush];
     }
 }
 

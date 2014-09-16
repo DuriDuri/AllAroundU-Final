@@ -62,6 +62,11 @@
         self.laundryRoomFactory = [VONLaundryRoomFactory laundryRooms];
         
         self.laundryRooms = [[[self.laundryRoomFactory allKeys]mutableCopy] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+        
+        //Mixpanel Analytics
+        Mixpanel *mixpanel = [Mixpanel sharedInstance];
+        [mixpanel track:@"Open Laundry Tracker"];
+        [mixpanel flush];
     }
 }
 

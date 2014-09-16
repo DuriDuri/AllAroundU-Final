@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wbc-UC-Kzs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--First View Controller - First-->
@@ -72,64 +71,6 @@
             </objects>
             <point key="canvasLocation" x="653" y="-736"/>
         </scene>
-        <!--Login View Controller-->
-        <scene sceneID="6uS-3e-KBP">
-            <objects>
-                <viewController id="wbc-UC-Kzs" customClass="VONLoginViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JDN-ag-hy3"/>
-                        <viewControllerLayoutGuide type="bottom" id="vAY-7f-kTC"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zSD-j3-GQh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="hAJ-fx-LOx">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="489"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1g-H6-Sco">
-                                <rect key="frame" x="60" y="453" width="200" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="8WT-LI-DLt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Login with Facebook" backgroundImage="Facebook.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginButtonPressed:" destination="wbc-UC-Kzs" eventType="touchUpInside" id="jf1-lJ-CLF"/>
-                                </connections>
-                            </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ae7-h8-BPc">
-                                <rect key="frame" x="150" y="380" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="vAY-7f-kTC" firstAttribute="top" secondItem="l1g-H6-Sco" secondAttribute="bottom" constant="79" id="9HC-6n-b2o"/>
-                            <constraint firstItem="l1g-H6-Sco" firstAttribute="centerX" secondItem="zSD-j3-GQh" secondAttribute="centerX" id="JDT-Ve-5b4"/>
-                            <constraint firstItem="ae7-h8-BPc" firstAttribute="centerX" secondItem="l1g-H6-Sco" secondAttribute="centerX" id="TO4-0V-Og4"/>
-                            <constraint firstItem="hAJ-fx-LOx" firstAttribute="top" secondItem="zSD-j3-GQh" secondAttribute="top" id="f8q-zF-Eta"/>
-                            <constraint firstItem="hAJ-fx-LOx" firstAttribute="width" secondItem="zSD-j3-GQh" secondAttribute="height" multiplier="40:71" id="hda-WP-wx7"/>
-                            <constraint firstItem="hAJ-fx-LOx" firstAttribute="centerX" secondItem="ae7-h8-BPc" secondAttribute="centerX" id="kBJ-2o-Cc9"/>
-                            <constraint firstItem="hAJ-fx-LOx" firstAttribute="bottom" secondItem="l1g-H6-Sco" secondAttribute="bottom" id="qs6-6d-fcI"/>
-                            <constraint firstItem="l1g-H6-Sco" firstAttribute="top" secondItem="ae7-h8-BPc" secondAttribute="bottom" constant="53" id="sz4-Kn-RRE"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="loginActivityIndicator" destination="ae7-h8-BPc" id="Rpb-DH-hrq"/>
-                        <outlet property="loginImageView" destination="hAJ-fx-LOx" id="hiP-ZS-i3B"/>
-                        <segue destination="8YX-ce-x5E" kind="modal" identifier="loggedInSegue" modalTransitionStyle="flipHorizontal" id="uNG-Gv-hUM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OXI-WS-cDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-463" y="180"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
             <objects>
@@ -144,9 +85,9 @@
                         <color key="selectedImageTintColor" red="1" green="0.82352948189999997" blue="0.38823533059999998" alpha="1" colorSpace="deviceRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
-                        <segue destination="zEn-gi-8gc" kind="relationship" relationship="viewControllers" id="NAp-N5-6tj"/>
                         <segue destination="3at-b5-8Fc" kind="relationship" relationship="viewControllers" id="wf1-gj-rDl"/>
+                        <segue destination="zEn-gi-8gc" kind="relationship" relationship="viewControllers" id="NAp-N5-6tj"/>
+                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
@@ -216,12 +157,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Campus Menu" id="LaE-a7-LC7">
-                        <barButtonItem key="leftBarButtonItem" image="LogOut" id="xqo-zE-K5Q">
-                            <color key="tintColor" red="1" green="0.82352948189999997" blue="0.38823533059999998" alpha="1" colorSpace="deviceRGB"/>
-                            <connections>
-                                <action selector="logoutBarButtonPressed:" destination="ckr-yS-obf" id="CCH-fU-hsB"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="Reload" id="bdQ-1z-M4s">
                             <color key="tintColor" red="1" green="0.82352948189999997" blue="0.38823533059999998" alpha="1" colorSpace="deviceRGB"/>
                             <connections>
@@ -398,9 +333,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="320" height="480"/>
-        <image name="Facebook.png" width="200" height="25"/>
-        <image name="LogOut" width="32" height="32"/>
         <image name="Menu" width="32" height="32"/>
         <image name="Reload" width="32" height="32"/>
         <image name="Trolley" width="32" height="32"/>

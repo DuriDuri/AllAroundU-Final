@@ -17,7 +17,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 - (IBAction)diningHallSC:(UISegmentedControl *)sender;
 - (IBAction)refreshBarButtonPressed:(UIBarButtonItem *)sender;
-- (IBAction)logoutBarButtonPressed:(UIBarButtonItem *)sender;
+
 
 //Todays Date
 @property (strong, nonatomic) NSString *dayToday;
@@ -116,6 +116,11 @@
         
         //Initialize todays Menu
         self.todaysMenu = self.upperMenu;
+        
+        //Mixpanel Analytics
+        Mixpanel *mixpanel = [Mixpanel sharedInstance];
+        [mixpanel track:@"Open Menu"];
+        [mixpanel flush];
     }
 
 }
@@ -206,8 +211,5 @@
     [mixpanel flush];
 }
 
-- (IBAction)logoutBarButtonPressed:(UIBarButtonItem *)sender {
-    [PFUser logOut];
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-}
+
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6812AB8C19BA7CA6004F99D6 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6812AB8B19BA7CA6004F99D6 /* Icon-76@2x.png */; };
 		681D8737199DF71F00C3D83C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681D8736199DF71F00C3D83C /* Default@2x.png */; };
 		681D873A199DF78700C3D83C /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 681D8738199DF78700C3D83C /* Facebook.png */; };
 		681D873B199DF78700C3D83C /* Facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 681D8739199DF78700C3D83C /* Facebook@2x.png */; };
@@ -53,7 +54,6 @@
 		68854014199D4A2D00512543 /* as.png in Resources */ = {isa = PBXBuildFile; fileRef = 68854005199D4A2D00512543 /* as.png */; };
 		68854017199D4A5B00512543 /* VONConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 68854016199D4A5B00512543 /* VONConstants.m */; };
 		68854019199D4B0900512543 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 68854018199D4B0900512543 /* libxml2.dylib */; };
-		6885401D199D4E9900512543 /* VONLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6885401C199D4E9900512543 /* VONLoginViewController.m */; };
 		6885401F199D50E600512543 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6885401E199D50E600512543 /* Parse.framework */; };
 		68854021199D518600512543 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68854020199D518600512543 /* Accounts.framework */; };
 		68854023199D51BB00512543 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68854022199D51BB00512543 /* AudioToolbox.framework */; };
@@ -81,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		631C16703900428393DEBE4A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6812AB8B19BA7CA6004F99D6 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		681D8736199DF71F00C3D83C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images.xcassets/LaunchImage.launchimage/Default@2x.png"; sourceTree = "<group>"; };
 		681D8738199DF78700C3D83C /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
 		681D8739199DF78700C3D83C /* Facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook@2x.png"; sourceTree = "<group>"; };
@@ -145,8 +146,6 @@
 		68854015199D4A5B00512543 /* VONConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VONConstants.h; sourceTree = "<group>"; };
 		68854016199D4A5B00512543 /* VONConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VONConstants.m; sourceTree = "<group>"; };
 		68854018199D4B0900512543 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		6885401B199D4E9900512543 /* VONLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VONLoginViewController.h; sourceTree = "<group>"; };
-		6885401C199D4E9900512543 /* VONLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VONLoginViewController.m; sourceTree = "<group>"; };
 		6885401E199D50E600512543 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		68854020199D518600512543 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		68854022199D51BB00512543 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -359,8 +358,6 @@
 		6885401A199D4D1600512543 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6885401B199D4E9900512543 /* VONLoginViewController.h */,
-				6885401C199D4E9900512543 /* VONLoginViewController.m */,
 				68853FC7199D48ED00512543 /* VONFirstViewController.h */,
 				68853FC8199D48ED00512543 /* VONFirstViewController.m */,
 				68853FC9199D48ED00512543 /* VONMenuViewController.h */,
@@ -376,6 +373,7 @@
 		68854036199D548E00512543 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6812AB8B19BA7CA6004F99D6 /* Icon-76@2x.png */,
 				681D8738199DF78700C3D83C /* Facebook.png */,
 				681D8739199DF78700C3D83C /* Facebook@2x.png */,
 				681D8736199DF71F00C3D83C /* Default@2x.png */,
@@ -504,6 +502,7 @@
 				68854010199D4A2D00512543 /* restaurant-50@2x.png in Resources */,
 				68853F9B199D480B00512543 /* InfoPlist.strings in Resources */,
 				68854014199D4A2D00512543 /* as.png in Resources */,
+				6812AB8C19BA7CA6004F99D6 /* Icon-76@2x.png in Resources */,
 				6885400C199D4A2D00512543 /* dry-64@2x.png in Resources */,
 				68854013199D4A2D00512543 /* trolley-32.png in Resources */,
 				681D8737199DF71F00C3D83C /* Default@2x.png in Resources */,
@@ -571,7 +570,6 @@
 				68853FD2199D48ED00512543 /* VONLaundryDetailViewController.m in Sources */,
 				68854017199D4A5B00512543 /* VONConstants.m in Sources */,
 				68853FD0199D48ED00512543 /* VONMenuViewController.m in Sources */,
-				6885401D199D4E9900512543 /* VONLoginViewController.m in Sources */,
 				68853FF2199D49A300512543 /* VONLaundryDataProvider.m in Sources */,
 				68853FEC199D499500512543 /* VONMenu.m in Sources */,
 				68853FEB199D499500512543 /* VONMenuDataProvider.m in Sources */,
@@ -712,7 +710,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -723,7 +721,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -741,7 +739,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

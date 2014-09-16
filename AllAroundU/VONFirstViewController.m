@@ -51,12 +51,12 @@
     [self addTrolleyPath];
 
     //Update Trolley Location
-    self.updateLocation = [NSTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(updateTrolleyLocation) userInfo:nil repeats:YES];
+    self.updateLocation = [NSTimer scheduledTimerWithTimeInterval:7 target:self selector:@selector(updateTrolleyLocation) userInfo:nil repeats:YES];
     
-    //Laundry TEST
-    
-    
-///div[@class='menuitem']/span[@class='ul']
+    //Mixpanel Analytics
+    Mixpanel *mixpanel = [Mixpanel sharedInstance];
+    [mixpanel track:@"Open Trolley Tracker"];
+    [mixpanel flush];
 }
 
 -(void)viewDidAppear:(BOOL)animated
